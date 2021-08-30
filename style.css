@@ -3,39 +3,35 @@
 *::after {
   box-sizing: border-box;
 }
-html
-{
+html {
   height: 100%;
 }
 body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: #6394c5;
   text-align: left;
-  background-color:#d3d3d3;
+  background-color: #d3d3d3;
 }
 .menu {
-
   background-color: #fff;
   margin-bottom: 15px;
- display: flex;
- position: relative;
+  display: flex;
+  position: relative;
 }
 a {
-  
-  position: relative;
   padding: 35px;
   color: #000;
-  
+  display: flex;
 }
 .name {
-  display: inline;
-  margin-right: 600px;
+  display: flex;
+  margin-right: auto;
   margin-left: 30px;
   font-size: 1.5em;
   color: #008000;
@@ -43,12 +39,16 @@ a {
 }
 .copyright {
   color: #000;
-  display: inline;
-  margin-left: 250px;
+  display: flex;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 30px;
+
 }
 .the-bottom-panel {
   background-color: #fff;
   flex: 0 0 auto;
+  display: flex;
 }
 .tabs {
   flex: 1 0 auto;
@@ -61,15 +61,15 @@ a {
   flex-direction: column;
   height: 100%;
 }
-.tabs>input[type="radio"] {
+.tabs > input[type="radio"] {
   display: none;
 }
 
-.tabs>input[type="radio"]:checked+label {
+.tabs > input[type="radio"]:checked + label {
   background-color: #bdbdbd;
 }
 
-.tabs>div {
+.tabs > div {
   /* скрыть контент по умолчанию */
   display: none;
   border: 1px solid rgb(218, 172, 172);
@@ -78,13 +78,13 @@ a {
 }
 
 /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-#tab-btn-1:checked~#content-1,
-#tab-btn-2:checked~#content-2,
-#tab-btn-3:checked~#content-3 {
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 {
   display: block;
 }
 
-.tabs>label {
+.tabs > label {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -101,6 +101,6 @@ a {
   margin-bottom: 10px;
 }
 
-.tabs>label:first-of-type {
+.tabs > label:first-of-type {
   margin-left: 0;
 }
